@@ -10,7 +10,7 @@
 
 Tattler is a restaurant directory platform designed to offer users personalized dining experiences based on up-to-date data and personal preferences. The platform enables users to discover restaurants, read reviews, add ratings, and find establishments that match their culinary preferences.
 
-## 🛠️ Technologies
+## Technologies
 
 - **Database:** MongoDB 7.0+ (with indexes and validation)
 - **Backend:** Node.js 18+, Express.js 4.x
@@ -21,7 +21,15 @@ Tattler is a restaurant directory platform designed to offer users personalized 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community) (v7.0 or higher) OR [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account
+- [Git](https://git-scm.com/)
+## Getting Started
 
 ### Prerequisites
 
