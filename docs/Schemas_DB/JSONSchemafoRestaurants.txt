@@ -1,0 +1,30 @@
+// Restaurants Schema
+
+{
+  "_id": ObjectId("..."),
+  "name": String,              // Name of the restaurant
+  "restaurant_id": String,     // ID
+  "borough": String,           // Zone
+  "cuisine": String,           // Type of
+  "address": {
+    "building": String,        // Number
+    "street": String,          // Street
+    "zipcode": String,         // CP
+    "coord": [Number, Number]  // Cordinattes
+  },
+  "grades": [{
+    "date": Date,              // Date of grade
+    "score": Number            // Score
+  }],
+  "comments": [{
+    "_id": ObjectId("..."),    // ID
+    "date": Date,              // Date of the comment
+    "comment": String,         // Text of the comment
+    "user_id": String          // User ID
+  }],
+  "phone": String,             // Phone
+  "website": String,           // Web Site
+  "price_range": String,       // "$", "$$", "$$$", "$$$$"
+  "created_at": Date,          // Creation Date
+  "updated_at": Date           // Update date
+}
