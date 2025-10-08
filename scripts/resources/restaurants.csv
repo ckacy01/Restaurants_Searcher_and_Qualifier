@@ -1,0 +1,6 @@
+restaurant_id,name,borough,cuisine,building,street,zipcode,longitude,latitude,phone,website,price_range
+R001,Joe's Pizza,Manhattan,Italian,7,7th Ave,10011,-74.0007,40.742,-212-555-1234,https://joespizza.com,$$
+R002,Sakura Sushi,Brooklyn,Japanese,120,Smith St,11201,-73.9901,40.6899,718-555-9876,https://sakurasushi.com,$$$
+R003,El Ranchito,Queens,Mexican,55,Main St,11375,-73.8461,40.7255,718-555-2222,, $
+R004,Green Leaf Cafe,Bronx,Vegan,100,3rd Ave,10451,-73.9224,40.8171,347-555-3333,https://greenleafcafe.com,$$
+R005,The Burger Joint,Manhattan,American,56,5th Ave,10010,-73.9856,40.7411,212-555-1111,, $
