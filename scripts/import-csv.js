@@ -8,63 +8,128 @@ const CSV_FILE = 'resources/restaurants.csv';
 
 async function importCSV() {
   const client = new MongoClient(MONGODB_URI);
-
+  
   try {
     await client.connect();
     console.log('Connected to MongoDB');
-
+    
     const db = client.db(DB_NAME);
     const collection = db.collection('restaurants');
-
+    
     const restaurants = [];
-
+    let rowCount = 0;
+    
     fs.createReadStream(CSV_FILE)
       .pipe(csv())
       .on('data', (row) => {
-        // Ensure required fields exist and are valid strings
-        const restaurant = {
-          restaurant_id: row.restaurant_id?.toString() || `R${Date.now()}`,
-          name: row.name?.toString() || 'Unnamed Restaurant',
-          borough: row.borough?.toString() || 'Unknown',
-          cuisine: row.cuisine?.toString() || 'General',
-          address: {
-            building: row.building?.toString() || '',
-            street: row.street?.toString() || 'Unknown Street',
-            zipcode: row.zipcode?.toString() || '',
-            coord:
-              row.longitude && row.latitude
-                ? [parseFloat(row.longitude), parseFloat(row.latitude)]
-                : [0, 0]
-          },
-          phone: row.phone?.toString() || '',
-          website: row.website?.toString() || '',
-          price_range: row.price_range?.toString() || '$$',
-          grades: [],
-          comments: [],
-          created_at: new Date(),
-          updated_at: new Date()
-        };
-
-        restaurants.push(restaurant);
+        rowCount++;
+        try {
+          // Parse coordinates
+          let longitude = parseFloat(row.longitude);
+          let latitude = parseFloat(row.latitude);
+          
+          // Validate coordinate ranges
+          if (isNaN(longitude) || longitude < -180 || longitude > 180) {
+            console.warn(`Row ${rowCount}: Invalid longitude, using 0.0`);
+            longitude = 0.0;
+          }
+          if (isNaN(latitude) || latitude < -90 || latitude > 90) {
+            console.warn(`Row ${rowCount}: Invalid latitude, using 0.0`);
+            latitude = 0.0;
+          }
+          
+          // Validate required fields
+          const name = row.name?.toString().trim();
+          const cuisine = row.cuisine?.toString().trim();
+          const street = row.street?.toString().trim();
+          const restaurant_id = row.restaurant_id?.toString().trim();
+          
+          if (!name || !cuisine || !street || !restaurant_id) {
+            console.warn(`Row ${rowCount}: Missing required fields, skipping`);
+            return;
+          }
+          
+          // Build document - ONLY fields in validator schema
+          const restaurant = {
+            restaurant_id: restaurant_id,
+            name: name,
+            cuisine: cuisine,
+            address: {
+              building: row.building?.toString().trim() || '',  // Must be STRING
+              street: street,                                    // Must be STRING (required)
+              zipcode: row.zipcode?.toString().trim() || '',     // Must be STRING
+              coord: [longitude, latitude]                       // Must be array of DOUBLES
+            },
+            grades: [],      // Empty array
+            comments: []     // Empty array
+          };
+          
+          restaurants.push(restaurant);
+          
+        } catch (error) {
+          console.error(`Row ${rowCount} error:`, error.message);
+        }
       })
       .on('end', async () => {
         try {
           if (restaurants.length === 0) {
-            console.log('No data found in CSV.');
-          } else {
-            const result = await collection.insertMany(restaurants);
-            console.log(`${result.insertedCount} restaurants imported successfully`);
+            console.log('No valid data found in CSV.');
+            return;
           }
+          
+          console.log(`\nProcessed ${rowCount} rows from CSV`);
+          console.log(`Valid documents: ${restaurants.length}`);
+          console.log(`Attempting to import...\n`);
+          
+          // Sample document for verification
+          console.log('Sample document structure:');
+          console.log(JSON.stringify(restaurants[0], null, 2));
+          console.log('\n');
+          
+          // Insert with ordered:false to continue on errors
+          const result = await collection.insertMany(restaurants, { 
+            ordered: false 
+          });
+          
+          console.log(`✓ ${result.insertedCount} restaurants imported successfully`);
+          
         } catch (error) {
-          console.error('Error inserting documents:', error);
+          if (error.code === 11000) {
+            // Duplicate key errors
+            const inserted = error.result?.insertedCount || 0;
+            const duplicates = restaurants.length - inserted;
+            console.log(`✓ ${inserted} restaurants imported successfully`);
+            console.log(`⚠ ${duplicates} duplicates skipped (restaurant_id already exists)`);
+          } else if (error.writeErrors) {
+            // Validation or other write errors
+            const inserted = error.result?.insertedCount || 0;
+            const failed = error.writeErrors.length;
+            console.log(`✓ ${inserted} restaurants imported successfully`);
+            console.log(`✗ ${failed} documents failed validation\n`);
+            
+            // Show first error in detail
+            console.log('First error details:');
+            const firstError = error.writeErrors[0];
+            console.log('Failed document:', JSON.stringify(firstError.err.op, null, 2));
+            
+          } else {
+            console.error('Error inserting documents:', error.message);
+          }
         } finally {
           await client.close();
+          console.log('\nMongoDB connection closed');
         }
+      })
+      .on('error', (error) => {
+        console.error('Error reading CSV file:', error);
+        client.close();
       });
+      
   } catch (error) {
     console.error('Connection error:', error);
     await client.close();
   }
 }
 
-importCSV();
+// Run the import
+importCSV().catch(console.error);
