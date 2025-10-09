@@ -1,6 +1,7 @@
+const { generateGrades, generateComments } = require('./datagenerators');
 const fs = require('fs');
 const csv = require('csv-parser');
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 
 const MONGODB_URI = 'mongodb://localhost:27017';
 const DB_NAME = 'tatler_db';
@@ -49,19 +50,25 @@ async function importCSV() {
             return;
           }
           
-          // Build document - ONLY fields in validator schema
+          // Build document with all optional fields
           const restaurant = {
             restaurant_id: restaurant_id,
             name: name,
             cuisine: cuisine,
+            borough: row.borough?.toString().trim() || '',
+            phone: row.phone?.toString().trim() || '',
+            website: row.website?.toString().trim() || '',
+            price_range: row.price_range?.toString().trim() || '$$',
             address: {
-              building: row.building?.toString().trim() || '',  // Must be STRING
-              street: street,                                    // Must be STRING (required)
-              zipcode: row.zipcode?.toString().trim() || '',     // Must be STRING
-              coord: [longitude, latitude]                       // Must be array of DOUBLES
+              building: row.building?.toString().trim() || '',
+              street: street,
+              zipcode: row.zipcode?.toString().trim() || '',
+              coord: [longitude, latitude]
             },
-            grades: [],      // Empty array
-            comments: []     // Empty array
+            grades: generateGrades(3),           // Generate 3 random grades
+            comments: generateComments(name, 4), // Generate 4 random comments
+            created_at: new Date(),
+            updated_at: new Date()
           };
           
           restaurants.push(restaurant);
@@ -92,6 +99,7 @@ async function importCSV() {
           });
           
           console.log(`✓ ${result.insertedCount} restaurants imported successfully`);
+          console.log(`✓ Each restaurant has 3 grades and 4 comments`);
           
         } catch (error) {
           if (error.code === 11000) {

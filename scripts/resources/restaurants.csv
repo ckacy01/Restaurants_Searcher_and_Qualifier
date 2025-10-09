@@ -1,5 +1,33 @@
-restaurant_id,name,cuisine,building,street,zipcode,longitude,latitude
-R001,Joe's Pizza,Italian,7,7th Ave,10011,-74.0007,40.7420
-R002,Sushi Zen,Japanese,108,West 44th St,10036,-73.9845,40.7580
-R003,Le Bernardin,French,155,West 51st St,10019,-73.9808,40.7622
-R004,Katz's Delicatessen,American,205,East Houston St,10002,-73.9872,40.7223
+restaurant_id,name,cuisine,borough,building,street,zipcode,longitude,latitude,phone,website,price_range
+R001,Joe's Pizza,Italian,Manhattan,7,7th Ave,10011,-74.0007,40.7420,212-555-1234,https://joespizza.com,$$
+R002,Sushi Zen,Japanese,Midtown,108,West 44th St,10036,-73.9845,40.7580,212-555-2345,https://sushizen.com,$$$
+R003,Le Bernardin,French,Midtown,155,West 51st St,10019,-73.9808,40.7622,212-554-1515,https://lebernardine.com,$$$$
+R004,Katz's Delicatessen,American,Lower East Side,205,East Houston St,10002,-73.9872,40.7223,212-254-2246,https://katzsdelicatessen.com,$$
+R005,Shake Shack,Burgers,Flatiron,Madison Square Park,Madison Ave,10010,-73.9881,40.7414,212-889-6600,https://shakeshack.com,$
+R006,Peter Luger,Steakhouse,Brooklyn,178,Broadway,11211,-73.9625,40.7099,718-387-7400,https://peterluger.com,$$$$
+R007,Xi'an Famous Foods,Chinese,East Village,81,St Marks Pl,10003,-73.9859,40.7289,212-786-2068,https://xianfoods.com,$
+R008,Gramercy Tavern,American,Gramercy,42,East 20th St,10003,-73.9881,40.7389,212-477-0777,https://gramercytavern.com,$$$
+R009,Momofuku Noodle Bar,Asian Fusion,East Village,171,1st Ave,10003,-73.9857,40.7264,212-777-7773,https://momofuku.com,$$
+R010,Carbone,Italian,Greenwich Village,181,Thompson St,10012,-74.0031,40.7269,212-254-3000,https://carbonenewyork.com,$$$
+R011,Eleven Madison Park,French,Flatiron,11,Madison Ave,10010,-73.9870,40.7424,212-889-0905,https://elevenmadisonpark.com,$$$$
+R012,Di Fara Pizza,Italian,Midwood,1424,Avenue J,11230,-73.9611,40.6252,718-258-1367,https://difarapizza.com,$$
+R013,Los Tacos No. 1,Mexican,Chelsea,Chelsea Market,9th Ave,10011,-74.0061,40.7424,212-256-0343,https://lostacos1.com,$
+R014,Russ & Daughters,Jewish Deli,Lower East Side,179,East Houston St,10002,-73.9879,40.7225,212-475-4880,https://russanddaughters.com,$$
+R015,The Halal Guys,Middle Eastern,Midtown,Corner of 53rd,6th Ave,10019,-73.9776,40.7614,347-527-1505,https://thehalalguys.com,$
+R016,Lucali,Italian,Carroll Gardens,575,Henry St,11231,-74.0013,40.6769,718-858-4086,https://lucali.com,$$$
+R017,Emmy Squared,Pizza,Williamsburg,364,Grand St,11211,-73.9563,40.7121,718-360-4535,https://emmysquared.com,$$
+R018,RedFarm,Chinese,West Village,529,Hudson St,10014,-74.0077,40.7340,212-792-9700,https://redfarmnyc.com,$$
+R019,Daniel,French,Upper East Side,60,East 65th St,10065,-73.9681,40.7656,212-288-0033,https://danielnyc.com,$$$$
+R020,Masa,Japanese,Columbus Circle,10,Columbus Cir,10019,-73.9829,40.7684,212-823-9800,https://masanyc.com,$$$$
+R021,Blue Hill,American,Greenwich Village,75,Washington Pl,10011,-74.0010,40.7314,212-539-1776,https://bluehillfarm.com,$$$
+R022,Estela,Mediterranean,NoLita,47,East Houston St,10012,-73.9951,40.7239,212-219-7693,https://estelanyc.com,$$
+R023,Balthazar,French,SoHo,80,Spring St,10012,-73.9977,40.7233,212-965-1414,https://balthazarny.com,$$
+R024,Rao's,Italian,East Harlem,455,East 114th St,10029,-73.9385,40.7970,212-722-6709,https://raos.com,$$$$
+R025,Buddakan,Asian Fusion,Chelsea,75,9th Ave,10011,-74.0054,40.7431,212-989-6699,https://buddakannyc.com,$$$
+R026,Union Square Cafe,American,Union Square,101,East 19th St,10003,-73.9889,40.7377,212-243-4020,https://unionsquarecafe.com,$$$
+R027,Kesté Pizza,Italian,West Village,271,Bleecker St,10014,-74.0026,40.7346,212-243-1500,https://kestepizzeria.com,$$
+R028,Ivan Ramen,Japanese,Lower East Side,25,Clinton St,10002,-73.9838,40.7213,646-678-3859,https://ivanramen.com,$$
+R029,Dirt Candy,Vegetarian,Lower East Side,86,Allen St,10002,-73.9899,40.7181,212-228-7732,https://dirtcandynyc.com,$$$
+R030,Mission Chinese,Chinese,Lower East Side,171,East Broadway,10002,-73.9868,40.7139,212-529-8800,https://missionchinesefood.com,$$
+R031,Lilia,Italian,Williamsburg,567,Union Ave,11211,-73.9503,40.7097,718-576-3095,https://lilianewyork.com,$$$
+R032,Oxomoco,Mexican,Greenpoint,128,Greenpoint Ave,11222,-73.9571,40.7300,646-688-4180,https://oxomoconyc.com,$$
