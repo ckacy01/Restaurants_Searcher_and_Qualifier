@@ -1,0 +1,3072 @@
+[{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7f8"
+  },
+  "restaurant_id": "R005",
+  "name": "Shake Shack",
+  "cuisine": "Burgers",
+  "borough": "Flatiron",
+  "phone": "212-889-6600",
+  "website": "https://shakeshack.com",
+  "price_range": "$",
+  "address": {
+    "building": "Madison Square Park",
+    "street": "Madison Ave",
+    "zipcode": "10010",
+    "coord": [
+      -73.9881,
+      40.7414
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-11-17T20:01:47.478Z"
+      },
+      "grade": "C",
+      "score": 25
+    },
+    {
+      "date": {
+        "$date": "2025-05-16T20:01:47.478Z"
+      },
+      "grade": "B",
+      "score": 37
+    },
+    {
+      "date": {
+        "$date": "2024-02-23T20:01:47.478Z"
+      },
+      "grade": "A",
+      "score": 36
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d784"
+      },
+      "date": {
+        "$date": "2025-05-10T20:01:47.478Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user008",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d785"
+      },
+      "date": {
+        "$date": "2025-06-06T20:01:47.478Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user002",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d786"
+      },
+      "date": {
+        "$date": "2025-09-10T20:01:47.478Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d787"
+      },
+      "date": {
+        "$date": "2025-10-08T20:01:47.478Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user006",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.478Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.478Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7f9"
+  },
+  "restaurant_id": "R006",
+  "name": "Peter Luger",
+  "cuisine": "Steakhouse",
+  "borough": "Brooklyn",
+  "phone": "718-387-7400",
+  "website": "https://peterluger.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "178",
+    "street": "Broadway",
+    "zipcode": "11211",
+    "coord": [
+      -73.9625,
+      40.7099
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-03-13T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 12
+    },
+    {
+      "date": {
+        "$date": "2025-05-05T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 29
+    },
+    {
+      "date": {
+        "$date": "2024-07-31T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 49
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d788"
+      },
+      "date": {
+        "$date": "2025-04-25T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user007",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d789"
+      },
+      "date": {
+        "$date": "2025-07-05T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78a"
+      },
+      "date": {
+        "$date": "2025-08-27T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78b"
+      },
+      "date": {
+        "$date": "2025-05-25T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user008",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7fa"
+  },
+  "restaurant_id": "R007",
+  "name": "Xi'an Famous Foods",
+  "cuisine": "Chinese",
+  "borough": "East Village",
+  "phone": "212-786-2068",
+  "website": "https://xianfoods.com",
+  "price_range": "$",
+  "address": {
+    "building": "81",
+    "street": "St Marks Pl",
+    "zipcode": "10003",
+    "coord": [
+      -73.9859,
+      40.7289
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-01-17T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 16
+    },
+    {
+      "date": {
+        "$date": "2025-03-06T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 14
+    },
+    {
+      "date": {
+        "$date": "2024-06-24T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 48
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78c"
+      },
+      "date": {
+        "$date": "2025-04-30T20:01:47.479Z"
+      },
+      "comment": "The pizza was outstanding!",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78d"
+      },
+      "date": {
+        "$date": "2025-08-28T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78e"
+      },
+      "date": {
+        "$date": "2025-06-10T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user006",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d78f"
+      },
+      "date": {
+        "$date": "2025-09-21T20:01:47.479Z"
+      },
+      "comment": "The steak was outstanding!",
+      "user_id": "user004",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7fb"
+  },
+  "restaurant_id": "R008",
+  "name": "Gramercy Tavern",
+  "cuisine": "American",
+  "borough": "Gramercy",
+  "phone": "212-477-0777",
+  "website": "https://gramercytavern.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "42",
+    "street": "East 20th St",
+    "zipcode": "10003",
+    "coord": [
+      -73.9881,
+      40.7389
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-04-08T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 5
+    },
+    {
+      "date": {
+        "$date": "2024-11-18T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 35
+    },
+    {
+      "date": {
+        "$date": "2024-05-31T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 48
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d790"
+      },
+      "date": {
+        "$date": "2025-05-08T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user008",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d791"
+      },
+      "date": {
+        "$date": "2025-04-24T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user008",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d792"
+      },
+      "date": {
+        "$date": "2025-05-30T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user004",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d793"
+      },
+      "date": {
+        "$date": "2025-05-05T20:01:47.479Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user001",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7fc"
+  },
+  "restaurant_id": "R009",
+  "name": "Momofuku Noodle Bar",
+  "cuisine": "Asian Fusion",
+  "borough": "East Village",
+  "phone": "212-777-7773",
+  "website": "https://momofuku.com",
+  "price_range": "$$",
+  "address": {
+    "building": "171",
+    "street": "1st Ave",
+    "zipcode": "10003",
+    "coord": [
+      -73.9857,
+      40.7264
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-05-17T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 5
+    },
+    {
+      "date": {
+        "$date": "2024-11-21T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 37
+    },
+    {
+      "date": {
+        "$date": "2025-02-09T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 33
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d794"
+      },
+      "date": {
+        "$date": "2025-06-13T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d795"
+      },
+      "date": {
+        "$date": "2025-04-21T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user006",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d796"
+      },
+      "date": {
+        "$date": "2025-05-15T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d797"
+      },
+      "date": {
+        "$date": "2025-07-19T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user003",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7fd"
+  },
+  "restaurant_id": "R010",
+  "name": "Carbone",
+  "cuisine": "Italian",
+  "borough": "Greenwich Village",
+  "phone": "212-254-3000",
+  "website": "https://carbonenewyork.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "181",
+    "street": "Thompson St",
+    "zipcode": "10012",
+    "coord": [
+      -74.0031,
+      40.7269
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-06-13T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 27
+    },
+    {
+      "date": {
+        "$date": "2025-01-05T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 28
+    },
+    {
+      "date": {
+        "$date": "2025-01-11T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 43
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d798"
+      },
+      "date": {
+        "$date": "2025-09-23T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d799"
+      },
+      "date": {
+        "$date": "2025-06-07T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79a"
+      },
+      "date": {
+        "$date": "2025-04-25T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79b"
+      },
+      "date": {
+        "$date": "2025-04-21T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user001",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7fe"
+  },
+  "restaurant_id": "R011",
+  "name": "Eleven Madison Park",
+  "cuisine": "French",
+  "borough": "Flatiron",
+  "phone": "212-889-0905",
+  "website": "https://elevenmadisonpark.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "11",
+    "street": "Madison Ave",
+    "zipcode": "10010",
+    "coord": [
+      -73.987,
+      40.7424
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-03-12T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 27
+    },
+    {
+      "date": {
+        "$date": "2024-10-09T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 36
+    },
+    {
+      "date": {
+        "$date": "2024-03-10T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 49
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79c"
+      },
+      "date": {
+        "$date": "2025-09-21T20:01:47.479Z"
+      },
+      "comment": "The salad was outstanding!",
+      "user_id": "user005",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79d"
+      },
+      "date": {
+        "$date": "2025-05-05T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user001",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79e"
+      },
+      "date": {
+        "$date": "2025-07-23T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d79f"
+      },
+      "date": {
+        "$date": "2025-06-08T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user005",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d7ff"
+  },
+  "restaurant_id": "R012",
+  "name": "Di Fara Pizza",
+  "cuisine": "Italian",
+  "borough": "Midwood",
+  "phone": "718-258-1367",
+  "website": "https://difarapizza.com",
+  "price_range": "$$",
+  "address": {
+    "building": "1424",
+    "street": "Avenue J",
+    "zipcode": "11230",
+    "coord": [
+      -73.9611,
+      40.6252
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-01-22T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 14
+    },
+    {
+      "date": {
+        "$date": "2024-08-27T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 26
+    },
+    {
+      "date": {
+        "$date": "2024-04-21T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 39
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a0"
+      },
+      "date": {
+        "$date": "2025-06-21T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a1"
+      },
+      "date": {
+        "$date": "2025-05-01T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user005",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a2"
+      },
+      "date": {
+        "$date": "2025-09-23T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a3"
+      },
+      "date": {
+        "$date": "2025-05-15T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user005",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d800"
+  },
+  "restaurant_id": "R013",
+  "name": "Los Tacos No. 1",
+  "cuisine": "Mexican",
+  "borough": "Chelsea",
+  "phone": "212-256-0343",
+  "website": "https://lostacos1.com",
+  "price_range": "$",
+  "address": {
+    "building": "Chelsea Market",
+    "street": "9th Ave",
+    "zipcode": "10011",
+    "coord": [
+      -74.0061,
+      40.7424
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-07-11T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 0
+    },
+    {
+      "date": {
+        "$date": "2025-01-24T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 26
+    },
+    {
+      "date": {
+        "$date": "2024-06-08T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 40
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a4"
+      },
+      "date": {
+        "$date": "2025-07-04T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user004",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a5"
+      },
+      "date": {
+        "$date": "2025-07-19T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a6"
+      },
+      "date": {
+        "$date": "2025-06-22T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user006",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a7"
+      },
+      "date": {
+        "$date": "2025-05-26T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user008",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d801"
+  },
+  "restaurant_id": "R014",
+  "name": "Russ & Daughters",
+  "cuisine": "Jewish Deli",
+  "borough": "Lower East Side",
+  "phone": "212-475-4880",
+  "website": "https://russanddaughters.com",
+  "price_range": "$$",
+  "address": {
+    "building": "179",
+    "street": "East Houston St",
+    "zipcode": "10002",
+    "coord": [
+      -73.9879,
+      40.7225
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-02-03T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 3
+    },
+    {
+      "date": {
+        "$date": "2025-02-25T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 27
+    },
+    {
+      "date": {
+        "$date": "2024-09-08T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 33
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a8"
+      },
+      "date": {
+        "$date": "2025-09-28T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user008",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7a9"
+      },
+      "date": {
+        "$date": "2025-04-22T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7aa"
+      },
+      "date": {
+        "$date": "2025-07-27T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user001",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ab"
+      },
+      "date": {
+        "$date": "2025-05-13T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user006",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d802"
+  },
+  "restaurant_id": "R015",
+  "name": "The Halal Guys",
+  "cuisine": "Middle Eastern",
+  "borough": "Midtown",
+  "phone": "347-527-1505",
+  "website": "https://thehalalguys.com",
+  "price_range": "$",
+  "address": {
+    "building": "Corner of 53rd",
+    "street": "6th Ave",
+    "zipcode": "10019",
+    "coord": [
+      -73.9776,
+      40.7614
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-05-16T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 23
+    },
+    {
+      "date": {
+        "$date": "2024-07-04T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 11
+    },
+    {
+      "date": {
+        "$date": "2024-06-06T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 34
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ac"
+      },
+      "date": {
+        "$date": "2025-08-14T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ad"
+      },
+      "date": {
+        "$date": "2025-05-12T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ae"
+      },
+      "date": {
+        "$date": "2025-04-30T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7af"
+      },
+      "date": {
+        "$date": "2025-05-11T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user001",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d803"
+  },
+  "restaurant_id": "R016",
+  "name": "Lucali",
+  "cuisine": "Italian",
+  "borough": "Carroll Gardens",
+  "phone": "718-858-4086",
+  "website": "https://lucali.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "575",
+    "street": "Henry St",
+    "zipcode": "11231",
+    "coord": [
+      -74.0013,
+      40.6769
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-10-25T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 29
+    },
+    {
+      "date": {
+        "$date": "2024-10-20T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 30
+    },
+    {
+      "date": {
+        "$date": "2024-09-03T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 26
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b0"
+      },
+      "date": {
+        "$date": "2025-05-19T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b1"
+      },
+      "date": {
+        "$date": "2025-07-26T20:01:47.479Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b2"
+      },
+      "date": {
+        "$date": "2025-06-02T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b3"
+      },
+      "date": {
+        "$date": "2025-07-20T20:01:47.479Z"
+      },
+      "comment": "The steak was outstanding!",
+      "user_id": "user008",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d804"
+  },
+  "restaurant_id": "R017",
+  "name": "Emmy Squared",
+  "cuisine": "Pizza",
+  "borough": "Williamsburg",
+  "phone": "718-360-4535",
+  "website": "https://emmysquared.com",
+  "price_range": "$$",
+  "address": {
+    "building": "364",
+    "street": "Grand St",
+    "zipcode": "11211",
+    "coord": [
+      -73.9563,
+      40.7121
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-05-22T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 12
+    },
+    {
+      "date": {
+        "$date": "2025-02-23T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 28
+    },
+    {
+      "date": {
+        "$date": "2024-04-16T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 44
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b4"
+      },
+      "date": {
+        "$date": "2025-04-27T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b5"
+      },
+      "date": {
+        "$date": "2025-09-08T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user004",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b6"
+      },
+      "date": {
+        "$date": "2025-05-14T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user006",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b7"
+      },
+      "date": {
+        "$date": "2025-08-07T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user002",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d805"
+  },
+  "restaurant_id": "R018",
+  "name": "RedFarm",
+  "cuisine": "Chinese",
+  "borough": "West Village",
+  "phone": "212-792-9700",
+  "website": "https://redfarmnyc.com",
+  "price_range": "$$",
+  "address": {
+    "building": "529",
+    "street": "Hudson St",
+    "zipcode": "10014",
+    "coord": [
+      -74.0077,
+      40.734
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-12-26T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 7
+    },
+    {
+      "date": {
+        "$date": "2025-06-01T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 34
+    },
+    {
+      "date": {
+        "$date": "2024-04-25T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 28
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b8"
+      },
+      "date": {
+        "$date": "2025-08-08T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7b9"
+      },
+      "date": {
+        "$date": "2025-08-11T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ba"
+      },
+      "date": {
+        "$date": "2025-05-29T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user002",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7bb"
+      },
+      "date": {
+        "$date": "2025-06-24T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user002",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d806"
+  },
+  "restaurant_id": "R019",
+  "name": "Daniel",
+  "cuisine": "French",
+  "borough": "Upper East Side",
+  "phone": "212-288-0033",
+  "website": "https://danielnyc.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "60",
+    "street": "East 65th St",
+    "zipcode": "10065",
+    "coord": [
+      -73.9681,
+      40.7656
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-09-15T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 17
+    },
+    {
+      "date": {
+        "$date": "2025-02-09T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 37
+    },
+    {
+      "date": {
+        "$date": "2024-10-08T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 22
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7bc"
+      },
+      "date": {
+        "$date": "2025-08-11T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7bd"
+      },
+      "date": {
+        "$date": "2025-07-11T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user008",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7be"
+      },
+      "date": {
+        "$date": "2025-06-02T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user008",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7bf"
+      },
+      "date": {
+        "$date": "2025-05-28T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user001",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d807"
+  },
+  "restaurant_id": "R020",
+  "name": "Masa",
+  "cuisine": "Japanese",
+  "borough": "Columbus Circle",
+  "phone": "212-823-9800",
+  "website": "https://masanyc.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "10",
+    "street": "Columbus Cir",
+    "zipcode": "10019",
+    "coord": [
+      -73.9829,
+      40.7684
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-05-11T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 0
+    },
+    {
+      "date": {
+        "$date": "2025-01-06T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 28
+    },
+    {
+      "date": {
+        "$date": "2024-04-02T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 21
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c0"
+      },
+      "date": {
+        "$date": "2025-07-26T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c1"
+      },
+      "date": {
+        "$date": "2025-09-01T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c2"
+      },
+      "date": {
+        "$date": "2025-07-31T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c3"
+      },
+      "date": {
+        "$date": "2025-04-21T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user005",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d808"
+  },
+  "restaurant_id": "R021",
+  "name": "Blue Hill",
+  "cuisine": "American",
+  "borough": "Greenwich Village",
+  "phone": "212-539-1776",
+  "website": "https://bluehillfarm.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "75",
+    "street": "Washington Pl",
+    "zipcode": "10011",
+    "coord": [
+      -74.001,
+      40.7314
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-01-19T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 0
+    },
+    {
+      "date": {
+        "$date": "2025-04-24T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 31
+    },
+    {
+      "date": {
+        "$date": "2024-10-09T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 21
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c4"
+      },
+      "date": {
+        "$date": "2025-05-01T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c5"
+      },
+      "date": {
+        "$date": "2025-04-21T20:01:47.479Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user007",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c6"
+      },
+      "date": {
+        "$date": "2025-08-11T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c7"
+      },
+      "date": {
+        "$date": "2025-09-23T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user005",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d809"
+  },
+  "restaurant_id": "R022",
+  "name": "Estela",
+  "cuisine": "Mediterranean",
+  "borough": "NoLita",
+  "phone": "212-219-7693",
+  "website": "https://estelanyc.com",
+  "price_range": "$$",
+  "address": {
+    "building": "47",
+    "street": "East Houston St",
+    "zipcode": "10012",
+    "coord": [
+      -73.9951,
+      40.7239
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-04-24T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 19
+    },
+    {
+      "date": {
+        "$date": "2025-01-01T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 18
+    },
+    {
+      "date": {
+        "$date": "2024-11-20T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 41
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c8"
+      },
+      "date": {
+        "$date": "2025-09-30T20:01:47.479Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7c9"
+      },
+      "date": {
+        "$date": "2025-06-20T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user005",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ca"
+      },
+      "date": {
+        "$date": "2025-05-13T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7cb"
+      },
+      "date": {
+        "$date": "2025-09-15T20:01:47.479Z"
+      },
+      "comment": "The tacos was outstanding!",
+      "user_id": "user002",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80a"
+  },
+  "restaurant_id": "R023",
+  "name": "Balthazar",
+  "cuisine": "French",
+  "borough": "SoHo",
+  "phone": "212-965-1414",
+  "website": "https://balthazarny.com",
+  "price_range": "$$",
+  "address": {
+    "building": "80",
+    "street": "Spring St",
+    "zipcode": "10012",
+    "coord": [
+      -73.9977,
+      40.7233
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-11-15T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 0
+    },
+    {
+      "date": {
+        "$date": "2024-06-25T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 15
+    },
+    {
+      "date": {
+        "$date": "2024-08-16T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 36
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7cc"
+      },
+      "date": {
+        "$date": "2025-04-15T20:01:47.479Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7cd"
+      },
+      "date": {
+        "$date": "2025-09-22T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ce"
+      },
+      "date": {
+        "$date": "2025-09-27T20:01:47.479Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7cf"
+      },
+      "date": {
+        "$date": "2025-07-28T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user001",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80b"
+  },
+  "restaurant_id": "R024",
+  "name": "Rao's",
+  "cuisine": "Italian",
+  "borough": "East Harlem",
+  "phone": "212-722-6709",
+  "website": "https://raos.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "455",
+    "street": "East 114th St",
+    "zipcode": "10029",
+    "coord": [
+      -73.9385,
+      40.797
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-08-23T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 20
+    },
+    {
+      "date": {
+        "$date": "2025-04-02T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 32
+    },
+    {
+      "date": {
+        "$date": "2024-12-06T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 31
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d0"
+      },
+      "date": {
+        "$date": "2025-05-31T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d1"
+      },
+      "date": {
+        "$date": "2025-09-27T20:01:47.479Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d2"
+      },
+      "date": {
+        "$date": "2025-09-18T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d3"
+      },
+      "date": {
+        "$date": "2025-06-04T20:01:47.479Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user006",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80c"
+  },
+  "restaurant_id": "R025",
+  "name": "Buddakan",
+  "cuisine": "Asian Fusion",
+  "borough": "Chelsea",
+  "phone": "212-989-6699",
+  "website": "https://buddakannyc.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "75",
+    "street": "9th Ave",
+    "zipcode": "10011",
+    "coord": [
+      -74.0054,
+      40.7431
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-12-25T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 16
+    },
+    {
+      "date": {
+        "$date": "2024-07-17T20:01:47.479Z"
+      },
+      "grade": "B",
+      "score": 12
+    },
+    {
+      "date": {
+        "$date": "2024-09-12T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 42
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d4"
+      },
+      "date": {
+        "$date": "2025-05-18T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user005",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d5"
+      },
+      "date": {
+        "$date": "2025-09-22T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user008",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d6"
+      },
+      "date": {
+        "$date": "2025-07-30T20:01:47.479Z"
+      },
+      "comment": "The pizza was outstanding!",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d7"
+      },
+      "date": {
+        "$date": "2025-09-03T20:01:47.479Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user002",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80d"
+  },
+  "restaurant_id": "R026",
+  "name": "Union Square Cafe",
+  "cuisine": "American",
+  "borough": "Union Square",
+  "phone": "212-243-4020",
+  "website": "https://unionsquarecafe.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "101",
+    "street": "East 19th St",
+    "zipcode": "10003",
+    "coord": [
+      -73.9889,
+      40.7377
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-02-20T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 3
+    },
+    {
+      "date": {
+        "$date": "2024-12-10T20:01:47.479Z"
+      },
+      "grade": "A",
+      "score": 16
+    },
+    {
+      "date": {
+        "$date": "2025-02-06T20:01:47.479Z"
+      },
+      "grade": "C",
+      "score": 28
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d8"
+      },
+      "date": {
+        "$date": "2025-07-08T20:01:47.479Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user001",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7d9"
+      },
+      "date": {
+        "$date": "2025-07-20T20:01:47.479Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7da"
+      },
+      "date": {
+        "$date": "2025-04-16T20:01:47.479Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7db"
+      },
+      "date": {
+        "$date": "2025-05-23T20:01:47.479Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user001",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80e"
+  },
+  "restaurant_id": "R027",
+  "name": "Kesté Pizza",
+  "cuisine": "Italian",
+  "borough": "West Village",
+  "phone": "212-243-1500",
+  "website": "https://kestepizzeria.com",
+  "price_range": "$$",
+  "address": {
+    "building": "271",
+    "street": "Bleecker St",
+    "zipcode": "10014",
+    "coord": [
+      -74.0026,
+      40.7346
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-06-16T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 20
+    },
+    {
+      "date": {
+        "$date": "2025-05-01T20:01:47.480Z"
+      },
+      "grade": "A",
+      "score": 17
+    },
+    {
+      "date": {
+        "$date": "2024-03-31T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 41
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7dc"
+      },
+      "date": {
+        "$date": "2025-08-28T20:01:47.480Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7dd"
+      },
+      "date": {
+        "$date": "2025-07-31T20:01:47.480Z"
+      },
+      "comment": "The salad was outstanding!",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7de"
+      },
+      "date": {
+        "$date": "2025-07-29T20:01:47.480Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7df"
+      },
+      "date": {
+        "$date": "2025-09-17T20:01:47.480Z"
+      },
+      "comment": "The pasta was outstanding!",
+      "user_id": "user004",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d80f"
+  },
+  "restaurant_id": "R028",
+  "name": "Ivan Ramen",
+  "cuisine": "Japanese",
+  "borough": "Lower East Side",
+  "phone": "646-678-3859",
+  "website": "https://ivanramen.com",
+  "price_range": "$$",
+  "address": {
+    "building": "25",
+    "street": "Clinton St",
+    "zipcode": "10002",
+    "coord": [
+      -73.9838,
+      40.7213
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-12-08T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 10
+    },
+    {
+      "date": {
+        "$date": "2025-01-07T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 12
+    },
+    {
+      "date": {
+        "$date": "2024-02-13T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 44
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e0"
+      },
+      "date": {
+        "$date": "2025-09-12T20:01:47.480Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e1"
+      },
+      "date": {
+        "$date": "2025-09-24T20:01:47.480Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user004",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e2"
+      },
+      "date": {
+        "$date": "2025-05-29T20:01:47.480Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e3"
+      },
+      "date": {
+        "$date": "2025-10-02T20:01:47.480Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user001",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d810"
+  },
+  "restaurant_id": "R029",
+  "name": "Dirt Candy",
+  "cuisine": "Vegetarian",
+  "borough": "Lower East Side",
+  "phone": "212-228-7732",
+  "website": "https://dirtcandynyc.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "86",
+    "street": "Allen St",
+    "zipcode": "10002",
+    "coord": [
+      -73.9899,
+      40.7181
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-06-27T20:01:47.480Z"
+      },
+      "grade": "A",
+      "score": 10
+    },
+    {
+      "date": {
+        "$date": "2025-06-10T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 32
+    },
+    {
+      "date": {
+        "$date": "2024-07-05T20:01:47.480Z"
+      },
+      "grade": "A",
+      "score": 45
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e4"
+      },
+      "date": {
+        "$date": "2025-10-07T20:01:47.480Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user005",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e5"
+      },
+      "date": {
+        "$date": "2025-06-25T20:01:47.480Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e6"
+      },
+      "date": {
+        "$date": "2025-05-20T20:01:47.480Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user002",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e7"
+      },
+      "date": {
+        "$date": "2025-09-23T20:01:47.480Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user002",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d811"
+  },
+  "restaurant_id": "R030",
+  "name": "Mission Chinese",
+  "cuisine": "Chinese",
+  "borough": "Lower East Side",
+  "phone": "212-529-8800",
+  "website": "https://missionchinesefood.com",
+  "price_range": "$$",
+  "address": {
+    "building": "171",
+    "street": "East Broadway",
+    "zipcode": "10002",
+    "coord": [
+      -73.9868,
+      40.7139
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-07-10T20:01:47.480Z"
+      },
+      "grade": "A",
+      "score": 2
+    },
+    {
+      "date": {
+        "$date": "2024-10-02T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 22
+    },
+    {
+      "date": {
+        "$date": "2024-10-26T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 41
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e8"
+      },
+      "date": {
+        "$date": "2025-06-12T20:01:47.480Z"
+      },
+      "comment": "Delicious food, will definitely return!",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7e9"
+      },
+      "date": {
+        "$date": "2025-09-06T20:01:47.480Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user005",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ea"
+      },
+      "date": {
+        "$date": "2025-08-05T20:01:47.480Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user008",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7eb"
+      },
+      "date": {
+        "$date": "2025-05-08T20:01:47.480Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user008",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d812"
+  },
+  "restaurant_id": "R031",
+  "name": "Lilia",
+  "cuisine": "Italian",
+  "borough": "Williamsburg",
+  "phone": "718-576-3095",
+  "website": "https://lilianewyork.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "567",
+    "street": "Union Ave",
+    "zipcode": "11211",
+    "coord": [
+      -73.9503,
+      40.7097
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-07-01T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 19
+    },
+    {
+      "date": {
+        "$date": "2024-07-18T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 31
+    },
+    {
+      "date": {
+        "$date": "2024-03-23T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 21
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ec"
+      },
+      "date": {
+        "$date": "2025-10-07T20:01:47.480Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ed"
+      },
+      "date": {
+        "$date": "2025-08-19T20:01:47.480Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user003",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ee"
+      },
+      "date": {
+        "$date": "2025-10-01T20:01:47.480Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7ef"
+      },
+      "date": {
+        "$date": "2025-09-29T20:01:47.480Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user002",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e6c32ba2c202ff4c99d813"
+  },
+  "restaurant_id": "R032",
+  "name": "Oxomoco",
+  "cuisine": "Mexican",
+  "borough": "Greenpoint",
+  "phone": "646-688-4180",
+  "website": "https://oxomoconyc.com",
+  "price_range": "$$",
+  "address": {
+    "building": "128",
+    "street": "Greenpoint Ave",
+    "zipcode": "11222",
+    "coord": [
+      -73.9571,
+      40.73
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-09-26T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 4
+    },
+    {
+      "date": {
+        "$date": "2025-01-17T20:01:47.480Z"
+      },
+      "grade": "B",
+      "score": 21
+    },
+    {
+      "date": {
+        "$date": "2024-04-04T20:01:47.480Z"
+      },
+      "grade": "C",
+      "score": 21
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7f0"
+      },
+      "date": {
+        "$date": "2025-09-14T20:01:47.480Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user007",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7f1"
+      },
+      "date": {
+        "$date": "2025-09-24T20:01:47.480Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7f2"
+      },
+      "date": {
+        "$date": "2025-04-19T20:01:47.480Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user007",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e6c32ba2c202ff4c99d7f3"
+      },
+      "date": {
+        "$date": "2025-09-13T20:01:47.480Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user002",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-08T20:01:47.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e719df8c1c8a17af4f445c"
+  },
+  "restaurant_id": "R001",
+  "name": "Joe's Pizza",
+  "cuisine": "Italian",
+  "borough": "Manhattan",
+  "phone": "212-555-1234",
+  "website": "https://joespizza.com",
+  "price_range": "$$",
+  "address": {
+    "building": "7",
+    "street": "7th Ave",
+    "zipcode": "10011",
+    "coord": [
+      -74.0007,
+      40.742
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-08-15T02:11:43.699Z"
+      },
+      "grade": "A",
+      "score": 2
+    },
+    {
+      "date": {
+        "$date": "2025-06-05T02:11:43.699Z"
+      },
+      "grade": "B",
+      "score": 11
+    },
+    {
+      "date": {
+        "$date": "2024-11-19T02:11:43.699Z"
+      },
+      "grade": "A",
+      "score": 45
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43dc"
+      },
+      "date": {
+        "$date": "2025-08-26T02:11:43.700Z"
+      },
+      "comment": "Great atmosphere and excellent service.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43dd"
+      },
+      "date": {
+        "$date": "2025-05-12T02:11:43.700Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43de"
+      },
+      "date": {
+        "$date": "2025-05-30T02:11:43.700Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user004",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43df"
+      },
+      "date": {
+        "$date": "2025-04-18T02:11:43.700Z"
+      },
+      "comment": "One of my favorite restaurants in the area.",
+      "user_id": "user008",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e719df8c1c8a17af4f445d"
+  },
+  "restaurant_id": "R002",
+  "name": "Sushi Zen",
+  "cuisine": "Japanese",
+  "borough": "Midtown",
+  "phone": "212-555-2345",
+  "website": "https://sushizen.com",
+  "price_range": "$$$",
+  "address": {
+    "building": "108",
+    "street": "West 44th St",
+    "zipcode": "10036",
+    "coord": [
+      -73.9845,
+      40.758
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-11-16T02:11:43.700Z"
+      },
+      "grade": "C",
+      "score": 19
+    },
+    {
+      "date": {
+        "$date": "2024-09-21T02:11:43.700Z"
+      },
+      "grade": "C",
+      "score": 35
+    },
+    {
+      "date": {
+        "$date": "2024-07-26T02:11:43.700Z"
+      },
+      "grade": "B",
+      "score": 37
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e0"
+      },
+      "date": {
+        "$date": "2025-05-11T02:11:43.700Z"
+      },
+      "comment": "Perfect spot for a date night.",
+      "user_id": "user008",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e1"
+      },
+      "date": {
+        "$date": "2025-08-27T02:11:43.700Z"
+      },
+      "comment": "The tacos was outstanding!",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e2"
+      },
+      "date": {
+        "$date": "2025-09-12T02:11:43.700Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user001",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e3"
+      },
+      "date": {
+        "$date": "2025-08-19T02:11:43.700Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user001",
+      "rating": 5
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e719df8c1c8a17af4f445e"
+  },
+  "restaurant_id": "R003",
+  "name": "Le Bernardin",
+  "cuisine": "French",
+  "borough": "Midtown",
+  "phone": "212-554-1515",
+  "website": "https://lebernardine.com",
+  "price_range": "$$$$",
+  "address": {
+    "building": "155",
+    "street": "West 51st St",
+    "zipcode": "10019",
+    "coord": [
+      -73.9808,
+      40.7622
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2024-11-15T02:11:43.700Z"
+      },
+      "grade": "B",
+      "score": 25
+    },
+    {
+      "date": {
+        "$date": "2025-05-05T02:11:43.700Z"
+      },
+      "grade": "C",
+      "score": 25
+    },
+    {
+      "date": {
+        "$date": "2025-01-11T02:11:43.700Z"
+      },
+      "grade": "A",
+      "score": 27
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e4"
+      },
+      "date": {
+        "$date": "2025-08-01T02:11:43.700Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user002",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e5"
+      },
+      "date": {
+        "$date": "2025-10-09T02:11:43.700Z"
+      },
+      "comment": "Good food but a bit pricey.",
+      "user_id": "user004",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e6"
+      },
+      "date": {
+        "$date": "2025-05-01T02:11:43.700Z"
+      },
+      "comment": "The staff was very friendly and accommodating.",
+      "user_id": "user006",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e7"
+      },
+      "date": {
+        "$date": "2025-08-02T02:11:43.700Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user005",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e719df8c1c8a17af4f445f"
+  },
+  "restaurant_id": "R004",
+  "name": "Katz's Delicatessen",
+  "cuisine": "American",
+  "borough": "Lower East Side",
+  "phone": "212-254-2246",
+  "website": "https://katzsdelicatessen.com",
+  "price_range": "$$",
+  "address": {
+    "building": "205",
+    "street": "East Houston St",
+    "zipcode": "10002",
+    "coord": [
+      -73.9872,
+      40.7223
+    ]
+  },
+  "grades": [
+    {
+      "date": {
+        "$date": "2025-09-13T02:11:43.700Z"
+      },
+      "grade": "B",
+      "score": 14
+    },
+    {
+      "date": {
+        "$date": "2025-02-26T02:11:43.700Z"
+      },
+      "grade": "C",
+      "score": 30
+    },
+    {
+      "date": {
+        "$date": "2024-04-09T02:11:43.700Z"
+      },
+      "grade": "A",
+      "score": 21
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e8"
+      },
+      "date": {
+        "$date": "2025-06-28T02:11:43.700Z"
+      },
+      "comment": "Amazing food! Best {cuisine} in the city.",
+      "user_id": "user003",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43e9"
+      },
+      "date": {
+        "$date": "2025-07-25T02:11:43.700Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user002",
+      "rating": 4
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43ea"
+      },
+      "date": {
+        "$date": "2025-05-20T02:11:43.700Z"
+      },
+      "comment": "Love coming here, never disappoints!",
+      "user_id": "user001",
+      "rating": 5
+    },
+    {
+      "_id": {
+        "$oid": "68e719df8c1c8a17af4f43eb"
+      },
+      "date": {
+        "$date": "2025-06-13T02:11:43.700Z"
+      },
+      "comment": "Highly recommend this place for a special occasion.",
+      "user_id": "user001",
+      "rating": 4
+    }
+  ],
+  "created_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  },
+  "updated_at": {
+    "$date": "2025-10-09T02:11:43.700Z"
+  }
+}]
