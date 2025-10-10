@@ -68,10 +68,19 @@ Restaurants_Searcher_and_Qualifier/
 ├── docs/                   # Documentation, diagrams, and design files
 ├── scripts/                # Utility or data migration scripts
 ├── src/                    # Main source code
-│   ├── controllers/        # API request handlers
-│   ├── models/             # Mongoose schemas and data models
-│   ├── routes/             # Express route definitions
-│   └── services/           # Business logic and qualification algorithms
+│   ├── technical.md        # Technical information about the endpoints and how to use it  
+│   ├── config/             # Database configuration and connection
+│       └── database.js     # Database connection setup 
+│   ├── controller/         # Restaurant Logic
+│       └── restaurantController.js  # Handles logic for restaurant-related requests
+│   ├── middleware/         # Exceptions
+│       └── errorHandler.js # Handles general and specific errors
+│   ├── models/             # Dabase models
+│        └── Restaurant.js   # Mongoose schema for the Restaurant model
+│   └── routes/             # Define API routes
+│       └── restaurants.js  # Defines API routes and links to controllers
+├── tests/
+│    └── postman             # Postman configuration to make tests
 ├── .gitignore              
 ├── LICENSE                 
 └── README.md
@@ -85,6 +94,6 @@ Restaurants_Searcher_and_Qualifier/
 
 - **scripts/** → Automation, data import/export tools
 
-- **src/** → Core app logic (controllers, routes, services, models)
+- **src/** → Core app logic (controllers, routes, models)
 
 
