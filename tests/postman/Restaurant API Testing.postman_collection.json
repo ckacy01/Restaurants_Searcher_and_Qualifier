@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "64b59e8f-2cc5-4c5b-b495-854f9a1df7e0",
+		"name": "Restaurant API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48891527",
+		"_collection_link": "https://ckacy01-5557687.postman.co/workspace/Jorge-A.'s-Workspace~ac5f52fa-1f1b-4207-80c9-c83de0d116e4/collection/48891527-64b59e8f-2cc5-4c5b-b495-854f9a1df7e0?action=share&source=collection_link&creator=48891527"
+	},
+	"item": [
+		{
+			"name": "GET REQUESTS",
+			"item": [
+				{
+					"name": "BY ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/restaurants/68e6c32ba2c202ff4c99d7f8",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"restaurants",
+								"68e6c32ba2c202ff4c99d7f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ALL RESTAURANTS",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/restaurants/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BY TEXT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants/search?q='Pizza'",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "'Pizza'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY PARAMETER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants?cuisine=Italian&borough=Greenwich Village",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants"
+							],
+							"query": [
+								{
+									"key": "cuisine",
+									"value": "Italian"
+								},
+								{
+									"key": "borough",
+									"value": "Greenwich Village"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST REQUESTS",
+			"item": [
+				{
+					"name": "NEW RESTAURANT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"restaurant_id\": \"R123456789\",\n  \"name\": \"Test Restaurant\",\n  \"cuisine\": \"Italian\",\n  \"borough\": \"Manhattan\",\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"zipcode\": \"10001\",\n    \"coord\": [-73.987, 40.748]\n  },\n  \"phone\": \"123-456-7890\",\n  \"website\": \"http://testrestaurant.com\",\n  \"price_range\": \"$$\",\n  \"grades\": [],\n  \"comments\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEW COMMENT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": \"Test comment\",\n  \"user_id\" : \"Test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/68e948d0914ae43b1162f94b/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"68e948d0914ae43b1162f94b",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NEW RATING",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"score\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/68e948d0914ae43b1162f94b/ratings",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"68e948d0914ae43b1162f94b",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants/68e948d0914ae43b1162f94b",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"68e948d0914ae43b1162f94b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UPDATE BY ID",
+			"item": [
+				{
+					"name": "UPDATE RESTAURANT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"restaurant_id\": \"R123456789\",\n  \"name\": \"Test Restaurant\",\n  \"cuisine\": \"Italian\",\n  \"borough\": \"Manhattan\",\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"zipcode\": \"10001\",\n    \"coord\": [-73.987, 40.748]\n  },\n  \"phone\": \"123-456-7890\",\n  \"website\": \"http://testrestaurant.com\",\n  \"price_range\": \"$$\",\n  \"grades\": [],\n  \"comments\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/68e948d0914ae43b1162f94b",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"68e948d0914ae43b1162f94b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
