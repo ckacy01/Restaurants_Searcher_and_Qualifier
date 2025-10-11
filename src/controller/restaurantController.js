@@ -1,33 +1,41 @@
 const Restaurant = require('../models/Restaurant');
 
-// Get all restaurants with pagination, filtering, and sorting
+/**
+ * Restaurant Controller - Handles CRUD operations and business logic for restaurants.
+ * 
+ * @author Jorge Armando Avila Carrillo | NAOID: 3310
+ * @version 1.0
+ * @date 10 - October - 2025
+ */
+
+/**
+ * Retrieves all restaurants with pagination, filtering, and sorting options.
+ * 
+ * @async
+ * @function getAllRestaurants
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @param {Function} next - Express next middleware function
+ * @returns {Promise<void>}
+ */
 exports.getAllRestaurants = async (req, res, next) => {
   try {
     const { page = 1, limit = 10, cuisine, borough, sortBy } = req.query;
 
-    // Build filter
     const filter = {};
     if (cuisine) filter.cuisine = cuisine;
     if (borough) filter.borough = borough;
 
-    // Build sorting
     const sort = {};
-    if (sortBy === 'rating') {
-      sort['grades.score'] = -1;
-    } else if (sortBy === 'name') {
-      sort.name = 1;
-    }
+    if (sortBy === 'rating') sort['grades.score'] = -1;
+    else if (sortBy === 'name') sort.name = 1;
 
-    // Pagination skip
     const skip = (page - 1) * limit;
-
-    // Execute query
     const restaurants = await Restaurant.find(filter)
       .sort(sort)
       .limit(parseInt(limit))
       .skip(skip);
 
-    // Count total documents
     const total = await Restaurant.countDocuments(filter);
 
     res.json({
@@ -45,11 +53,19 @@ exports.getAllRestaurants = async (req, res, next) => {
   }
 };
 
-// Get restaurant by ID
+/**
+ * Retrieves a single restaurant by ID.
+ * 
+ * @async
+ * @function getRestaurantById
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @param {Function} next - Express next middleware function
+ * @returns {Promise<void>}
+ */
 exports.getRestaurantById = async (req, res, next) => {
   try {
     const { id } = req.params;
-
     const restaurant = await Restaurant.findById(id);
 
     if (!restaurant) {
@@ -59,21 +75,27 @@ exports.getRestaurantById = async (req, res, next) => {
       });
     }
 
-    res.json({
-      success: true,
-      data: restaurant
-    });
+    res.json({ success: true, data: restaurant });
   } catch (error) {
     next(error);
   }
 };
 
-// Create new restaurant
+/**
+ * Creates a new restaurant with validation of required fields.
+ * Auto-generates unique restaurant ID if not provided.
+ * 
+ * @async
+ * @function createRestaurant
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @param {Function} next - Express next middleware function
+ * @returns {Promise<void>}
+ */
 exports.createRestaurant = async (req, res, next) => {
   try {
     const { name, borough, cuisine, address, phone, website, price_range } = req.body;
 
-    // Validate required fields
     if (!name || !borough || !cuisine || !address) {
       return res.status(400).json({
         success: false,
@@ -81,7 +103,6 @@ exports.createRestaurant = async (req, res, next) => {
       });
     }
 
-    // Validate address
     if (!address.street) {
       return res.status(400).json({
         success: false,
@@ -89,11 +110,8 @@ exports.createRestaurant = async (req, res, next) => {
       });
     }
 
-    // Generate unique restaurant ID if missing
-    const restaurant_id = `R${Date.now()}`;
-
     const newRestaurant = new Restaurant({
-      restaurant_id,
+      restaurant_id: `R${Date.now()}`,
       name,
       borough,
       cuisine,
@@ -117,17 +135,24 @@ exports.createRestaurant = async (req, res, next) => {
   }
 };
 
-// Update restaurant
+/**
+ * Updates restaurant data by ID. Prevents modification of ID fields.
+ * Updates the modification timestamp automatically.
+ * 
+ * @async
+ * @function updateRestaurant
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @param {Function} next - Express next middleware function
+ * @returns {Promise<void>}
+ */
 exports.updateRestaurant = async (req, res, next) => {
   try {
     const { id } = req.params;
     const updateData = req.body;
 
-    // Prevent changing the ID
     delete updateData.restaurant_id;
     delete updateData._id;
-
-    // Update modification date
     updateData.updated_at = new Date();
 
     const restaurant = await Restaurant.findByIdAndUpdate(
@@ -153,11 +178,12 @@ exports.updateRestaurant = async (req, res, next) => {
   }
 };
 
-// Delete restaurant
+/**
+ * Deletes a restaurant by ID.
+ */
 exports.deleteRestaurant = async (req, res, next) => {
   try {
     const { id } = req.params;
-
     const restaurant = await Restaurant.findByIdAndDelete(id);
 
     if (!restaurant) {
@@ -176,7 +202,10 @@ exports.deleteRestaurant = async (req, res, next) => {
   }
 };
 
-// Add a comment
+/**
+ * Adds a new comment to a restaurant.
+ * Defaults to 'anonymous' if user_id is not provided.
+ */
 exports.addComment = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -221,7 +250,9 @@ exports.addComment = async (req, res, next) => {
   }
 };
 
-// Add a rating
+/**
+ * Adds a rating (grade) to a restaurant. Score must be between 1 and 5.
+ */
 exports.addRating = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -265,7 +296,10 @@ exports.addRating = async (req, res, next) => {
   }
 };
 
-// Text search
+/**
+ * Performs text search on restaurants using MongoDB text index.
+ * Results are sorted by relevance score.
+ */
 exports.searchRestaurants = async (req, res, next) => {
   try {
     const { q } = req.query;
