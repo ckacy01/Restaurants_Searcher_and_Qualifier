@@ -8,28 +8,30 @@
 
 **Find and evaluate restaurants based on customizable criteria.**
 
-A project designed to help users search for restaurants, filter them using multiple conditions, and rank or qualify them according to specific rules or preferences.
+A full-stack Node.js/MongoDB project to search, filter, and rank restaurants, with robust REST API, data import tools, and extensible schema.
 
 ---
 
 ## Features
 
-- Search restaurants by name, cuisine, or location  
-- Rank and qualify restaurants based on user-defined metrics  
-- Modular design for extending qualification logic or adding new data sources  
-- Data parsing from CSV/JSON formats  
-- REST API for programmatic access  
+- Search restaurants by name, cuisine, or location
+- Full-text search and relevance ranking
+- Pagination, filtering, and sorting (by rating or name)
+- Add comments and ratings to restaurants
+- Modular design for extending qualification logic or adding new data sources
+- Data import from CSV with automatic generation of grades and comments
+- REST API for programmatic access
+- Centralized error handling and validation
 
 ---
 
 ## Tech Stack
 
-- **Backend / API:** Node.js, Express  
-- **Database:** MongoDB (with schema validation & indexing)  
-- **Data Handling:** CSV/JSON parsers  
-- **Version Control:** Git / GitHub  
-- **Testing Tools:** Postman, Insomnia  
-- **Documentation:** Markdown  
+- **Backend / API:** Node.js, Express
+- **Database:** MongoDB (with schema validation & indexing)
+- **Data Handling:** CSV/JSON parsers ([scripts/import-csv.js](scripts/import-csv.js))
+- **Testing Tools:** Postman, Insomnia ([tests/postman](tests/postman))
+- **Documentation:** Markdown ([docs/restaurant_api_docs.md](docs/restaurant_api_docs.md))
 
 ---
 
@@ -37,63 +39,126 @@ A project designed to help users search for restaurants, filter them using multi
 
 ### Prerequisites
 
-Make sure you have the following installed:
 - [Node.js](https://nodejs.org/) (v18 or higher)
-- [MongoDB](https://www.mongodb.com/try/download/community) (v7.0 or higher) OR [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account
+- [MongoDB](https://www.mongodb.com/try/download/community) (v7.0 or higher) OR [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 - [Git](https://git-scm.com/)
 
 ### Installation
 
-```bash
-# 1. Clone the repository
+```sh
 git clone https://github.com/ckacy01/Restaurants_Searcher_and_Qualifier.git
 cd Restaurants_Searcher_and_Qualifier
-
-# 2. Install dependencies
 npm install
+```
 
-# 3. Configure environment variables
-# Example: create a .env file and add your MongoDB URI
-# MONGO_URI=mongodb://localhost:27017/restaurants_db
+### Configuration
 
-# 4. Run the server
-npm start
+Create a `.env` file and set your MongoDB URI:
 
 ```
-### Repository Structure
+MONGODB_URI=mongodb://localhost:27017/tatler_db
+PORT=5000
+```
+
+### Running the Server
+
+```sh
+npm start
+```
+
+API will be available at `http://localhost:5000/api/restaurants`.
+
+---
+
+## Data Import
+
+To import restaurant data from CSV:
+
+```sh
+node scripts/import-csv.js
+```
+
+- Source file: [scripts/resources/restaurants.csv](scripts/resources/restaurants.csv)
+- Generates grades and comments automatically ([scripts/datagenerators.js](scripts/datagenerators.js))
+- Handles duplicates and validation errors robustly
+
+---
+
+## API Usage
+
+See [docs/restaurant_api_docs.md](docs/restaurant_api_docs.md) for full details.
+
+**Main Endpoints:**
+
+- `GET /api/restaurants` — List all restaurants (pagination, filtering, sorting)
+- `GET /api/restaurants/:id` — Get restaurant by ID
+- `GET /api/restaurants/search?q=term` — Full-text search
+- `POST /api/restaurants` — Create new restaurant
+- `PUT /api/restaurants/:id` — Update restaurant
+- `DELETE /api/restaurants/:id` — Delete restaurant
+- `POST /api/restaurants/:id/comments` — Add comment
+- `POST /api/restaurants/:id/ratings` — Add rating
+
+**Error Handling:**  
+All endpoints return a `success` boolean and descriptive messages. See [src/middleware/errorHandler.js](src/middleware/errorHandler.js).
+
+---
+
+## Data Model
+
+See [docs/Schemas_DB/JSONSchemafoRestaurants.txt](docs/Schemas_DB/JSONSchemafoRestaurants.txt) for full schema.
+
+**Restaurant fields:**
+- `name`, `restaurant_id`, `cuisine`, `borough`, `address`, `phone`, `website`, `price_range`
+- `grades`: array of `{ date, grade, score }`
+- `comments`: array of `{ _id, date, comment, user_id, rating }`
+- `created_at`, `updated_at`
+
+---
+
+## Repository Structure
 
 ```bash
 Restaurants_Searcher_and_Qualifier/
 ├── backups/                # Database dumps or data snapshots
 ├── docs/                   # Documentation, diagrams, and design files
+│   ├── restaurant_api_docs.md
+│   └── Schemas_DB/
+│       └── JSONSchemafoRestaurants.txt
 ├── scripts/                # Utility or data migration scripts
+│   ├── import-csv.js
+│   ├── datagenerators.js
+│   └── resources/
+│       └── restaurants.csv
 ├── src/                    # Main source code
-│   ├── technical.md        # Technical information about the endpoints and how to use it  
-│   ├── config/             # Database configuration and connection
-│       └── database.js     # Database connection setup 
-│   ├── controller/         # Restaurant Logic
-│       └── restaurantController.js  # Handles logic for restaurant-related requests
-│   ├── middleware/         # Exceptions
-│       └── errorHandler.js # Handles general and specific errors
-│   ├── models/             # Dabase models
-│        └── Restaurant.js   # Mongoose schema for the Restaurant model
-│   └── routes/             # Define API routes
-│       └── restaurants.js  # Defines API routes and links to controllers
+│   ├── config/
+│   ├── controller/
+│   ├── middleware/
+│   ├── models/
+│   └── routes/
 ├── tests/
-│    └── postman             # Postman configuration to make tests
-├── .gitignore              
-├── LICENSE                 
+│   └── postman/
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
-**Folder summary:**
+---
 
-- **backups/** → Backup data and exports
+## Documentation & Schemas
 
-- **docs/** → Project specs, ER diagrams, API documentation
+- [API Documentation](docs/restaurant_api_docs.md)
+- [Restaurant Schema](docs/Schemas_DB/JSONSchemafoRestaurants.txt)
+- [User Schema](docs/Schemas_DB/JSONSchemaforUsers.txt)
 
-- **scripts/** → Automation, data import/export tools
+---
 
-- **src/** → Core app logic (controllers, routes, models)
+## License
 
+MIT License. See [LICENSE](LICENSE) for details.
 
+---
+
+## Author
+
+Jorge Armando Avila Carrillo | NAOID: 3310
