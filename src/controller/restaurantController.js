@@ -20,15 +20,24 @@ const Restaurant = require('../models/Restaurant');
  */
 exports.getAllRestaurants = async (req, res, next) => {
   try {
-    const { page = 1, limit = 10, cuisine, borough, sortBy } = req.query;
+    const { page = 1, limit = 10, cuisine, borough, sortBy, price_range, address_zipcode } = req.query;
+
+
 
     const filter = {};
     if (cuisine) filter.cuisine = cuisine;
     if (borough) filter.borough = borough;
+    if (price_range) filter.price_range = price_range;
+    if (address_zipcode) filter['address.zipcode'] = address_zipcode;
 
     const sort = {};
     if (sortBy === 'rating') sort['grades.score'] = -1;
     else if (sortBy === 'name') sort.name = 1;
+    else if (sortBy === 'newest') sort.created_at = -1;
+    else if (sortBy === 'price_asc') sort.price_range = 1;
+    else if (sortBy === 'price_desc') sort.price_range = -1;
+    else if (sortBy === 'borough') sort.borough = 1;
+
 
     const skip = (page - 1) * limit;
     const restaurants = await Restaurant.find(filter)
