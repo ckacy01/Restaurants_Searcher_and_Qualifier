@@ -1,0 +1,142 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'name',
+      'restaurant_id',
+      'cuisine',
+      'address'
+    ],
+    additionalProperties: true,
+    properties: {
+      name: {
+        bsonType: 'string',
+        description: 'Restaurant name - required'
+      },
+      restaurant_id: {
+        bsonType: 'string',
+        description: 'Unique restaurant ID - required'
+      },
+      cuisine: {
+        bsonType: 'string',
+        description: 'Cuisine type - required'
+      },
+      borough: {
+        bsonType: 'string',
+        description: 'Borough name (optional)'
+      },
+      phone: {
+        bsonType: 'string',
+        description: 'Phone number (optional)'
+      },
+      website: {
+        bsonType: 'string',
+        description: 'Website URL (optional)'
+      },
+      price_range: {
+        bsonType: 'string',
+        description: 'Price range like $, $$, $$$ (optional)'
+      },
+      address: {
+        bsonType: 'object',
+        required: [
+          'street'
+        ],
+        additionalProperties: true,
+        properties: {
+          building: {
+            bsonType: 'string',
+            description: 'Building number'
+          },
+          street: {
+            bsonType: 'string',
+            description: 'Street name - required'
+          },
+          zipcode: {
+            bsonType: 'string',
+            description: 'ZIP code'
+          },
+          coord: {
+            bsonType: 'array',
+            description: 'Coordinates [longitude, latitude]',
+            items: {
+              bsonType: 'double'
+            },
+            minItems: 2,
+            maxItems: 2
+          }
+        }
+      },
+      grades: {
+        bsonType: 'array',
+        description: 'Restaurant grades/inspections',
+        items: {
+          bsonType: 'object',
+          required: [
+            'date',
+            'score'
+          ],
+          additionalProperties: true,
+          properties: {
+            date: {
+              bsonType: 'date',
+              description: 'Inspection date'
+            },
+            grade: {
+              bsonType: 'string',
+              description: 'Letter grade (A, B, C, etc.)'
+            },
+            score: {
+              bsonType: 'int',
+              description: 'Numeric score'
+            }
+          }
+        }
+      },
+      comments: {
+        bsonType: 'array',
+        description: 'User comments/reviews',
+        items: {
+          bsonType: 'object',
+          required: [
+            'date',
+            'comment'
+          ],
+          additionalProperties: true,
+          properties: {
+            _id: {
+              bsonType: 'objectId',
+              description: 'Comment ID'
+            },
+            date: {
+              bsonType: 'date',
+              description: 'Comment date'
+            },
+            comment: {
+              bsonType: 'string',
+              description: 'Comment text'
+            },
+            user_id: {
+              bsonType: 'string',
+              description: 'User who made the comment'
+            },
+            rating: {
+              bsonType: 'int',
+              minimum: 1,
+              maximum: 5,
+              description: 'Star rating 1-5'
+            }
+          }
+        }
+      },
+      created_at: {
+        bsonType: 'date',
+        description: 'Document creation timestamp'
+      },
+      updated_at: {
+        bsonType: 'date',
+        description: 'Last update timestamp'
+      }
+    }
+  }
+}

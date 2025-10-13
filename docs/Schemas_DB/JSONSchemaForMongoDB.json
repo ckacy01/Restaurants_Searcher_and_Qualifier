@@ -1,0 +1,127 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "address",
+      "borough",
+      "comments",
+      "cuisine",
+      "grades",
+      "name",
+      "phone",
+      "price_range",
+      "restaurant_id",
+      "website"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "address": {
+        "bsonType": "object",
+        "properties": {
+          "building": {
+            "bsonType": "string"
+          },
+          "coord": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "double"
+            }
+          },
+          "street": {
+            "bsonType": "string"
+          },
+          "zipcode": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "coord",
+          "street",
+          "zipcode"
+        ]
+      },
+      "borough": {
+        "bsonType": "string"
+      },
+      "comments": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "_id": {
+              "bsonType": "objectId"
+            },
+            "comment": {
+              "bsonType": "string"
+            },
+            "date": {
+              "bsonType": "date"
+            },
+            "rating": {
+              "bsonType": "int"
+            },
+            "user_id": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "_id",
+            "comment",
+            "date",
+            "rating",
+            "user_id"
+          ]
+        }
+      },
+      "created_at": {
+        "bsonType": "date"
+      },
+      "cuisine": {
+        "bsonType": "string"
+      },
+      "grades": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "date": {
+              "bsonType": "date"
+            },
+            "grade": {
+              "bsonType": "string"
+            },
+            "score": {
+              "bsonType": "int"
+            }
+          },
+          "required": [
+            "date",
+            "grade",
+            "score"
+          ]
+        }
+      },
+      "name": {
+        "bsonType": "string"
+      },
+      "phone": {
+        "bsonType": "string"
+      },
+      "price_range": {
+        "bsonType": "string"
+      },
+      "restaurant_id": {
+        "bsonType": "string"
+      },
+      "updated_at": {
+        "bsonType": "date"
+      },
+      "website": {
+        "bsonType": "string"
+      }
+    }
+  }
+}
