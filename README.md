@@ -150,6 +150,9 @@ Restaurants_Searcher_and_Qualifier/
 - [API Documentation](docs/restaurant_api_docs.md)
 - [Restaurant Schema](docs/Schemas_DB/JSONSchemafoRestaurants.txt)
 - [User Schema](docs/Schemas_DB/JSONSchemaforUsers.txt)
+- [Pagination & Filtering](docs/restaurant_filtering.md)
+- [Postman screenshots](tests/postman/Screenshots/)
+- [Postman Testing JSON](tests/postman/Restaurant%20API%20Testing.postman_collection.json)
 
 ---
 
