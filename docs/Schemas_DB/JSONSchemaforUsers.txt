@@ -1,7 +1,0 @@
-{
-  "_id": ObjectId("..."),
-  "username": String,
-  "email": String,
-  "created_at": Date,
-  "favorites": [String]     
-}
